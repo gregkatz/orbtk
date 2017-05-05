@@ -1,15 +1,12 @@
 use orbclient::Color;
 
-const fn hex(data: u32) -> Color {
-    Color { data: 0xFF000000 | data }
-}
+const BLACK: Color = Color{ data: 0x000000 | 0xFF000000 };
+const SELECT_BLUE: Color = Color{ data: 0x5294E2 | 0xFF000000 };
+const BORDER_GREY: Color = Color{ data:0xCFD6E6 | 0xFF000000 };
+const WINDOW_GREY: Color = Color{ data:0xF5F6F7 | 0xFF000000 };
+const BUTTON_WHITE: Color = Color{ data:0xFBFBFC | 0xFF000000 };
+const WHITE: Color = Color{ data:0xFFFFFF | 0xFF000000 };
 
-const BLACK: Color = hex(0x000000);
-const SELECT_BLUE: Color = hex(0x5294E2);
-const BORDER_GREY: Color = hex(0xCFD6E6);
-const WINDOW_GREY: Color = hex(0xF5F6F7);
-const BUTTON_WHITE: Color = hex(0xFBFBFC);
-const WHITE: Color = hex(0xFFFFFF);
 
 pub static WINDOW_BACKGROUND: Color = WINDOW_GREY;
 
